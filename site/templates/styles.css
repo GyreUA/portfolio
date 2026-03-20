@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+#name {
+    color: white;
+}
+
+#portfolio_text {
+    text-align: center;
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background: none;
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    border: 0cm;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+body{
+    display: flex;
+    text-align: left;
+    background-color: #262626;
+}
+
+.container .text {
+    position: absolute;
+    left: 290px;
+    font-size: 30px;
+    font-weight: 600;
+    color: yellow;
+}
+
+.container .text.start {
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #C4C4C4;
+    font-style:normal;
+}
+
+.container .text.write:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    border-left: 14px solid #C4C4C4;
+    font-style:normal;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+#st2, #wr2 {
+    top: 50px;
+    opacity: 0;
+    animation: show 0.1s forwards 3s;
+}
+#st3, #wr3 {
+    top: 95px;
+    opacity: 0;
+    animation: show 0.1s forwards 6s;
+}
+#st4, #wr4 {
+    top: 140px;
+    opacity: 0;
+    animation: show 0.1s forwards 9s;
+}
+#st5, #wr5 {
+    top: 185px;
+    opacity: 0;
+    animation: show .1s forwards 12s; 
+}
+#st6, #wr6 {
+    top: 230px;
+    opacity: 0;
+    animation: show .1s forwards 15s;
+}
+#inp_st, #inp_wr {
+    top: 275px;
+    opacity: 1;
+    animation: show .1s forwards 18s;
+}
+
+
+
+
+
+
+#wr1::before {
+    animation:
+        write 4s steps(12) forwards,
+        hideCursor 0s forwards 3s;
+}
+
+#wr2::before {
+    animation: 
+        write 4s steps(18) forwards, 
+        hideCursor 0s forwards;
+    animation-delay: 3s, 6s;
+}
+
+#wr3::before {
+    animation:
+        write 4s steps(16) forwards,
+        hideCursor 0s forwards;
+    animation-delay: 6s, 9s;
+}
+
+#wr4::before {
+    animation:
+        write 4s steps(16) forwards,
+        hideCursor 0s forwards;
+    animation-delay: 9s, 12s;
+}
+
+#wr5::before {
+    animation: 
+        write 4s steps(18) forwards,
+        hideCursor 0s forwards;
+    animation-delay: 12s, 15s;
+}
+
+#wr6::before {
+    animation:
+        write 4s steps(16) forwards,
+        hideCursor 0s forwards;
+    animation-delay: 15s, 18s;
+}
+
+@keyframes hideCursor {
+    to {
+        border-left-color: transparent;
+    }
+}
+
+#wr2::before {
+    animation-delay: 3s, 6s;
+}
+
+#wr3::before {
+    animation-delay: 6s, 9s;
+}
+
+#wr4::before {
+    animation-delay: 9s, 12s;
+}
+
+#wr5::before {
+    animation-delay: 12s, 15s;
+}
+
+#wr6::before {
+    animation-delay: 15s, 18s;
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes write{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 100%;
+    }
+}

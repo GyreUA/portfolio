@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/style_ab.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style_ab.css') }}">
         <title>Про мене</title>
     </head>
 
@@ -9,7 +9,7 @@
 
         
         <div class="sidebar-info">
-            <img src="/images/me.png" height="300" id="me">
+            <img src="{{ url_for('static', filename='images/me.png') }}" height="300" id="me">
             <h1 class="name">Поліщук Тимофій</h1>
             <br>
 
@@ -19,7 +19,7 @@
 
             <div class="info">
                 <div class="infobox">
-                    <img src="/images/phone.png" height="40" class="info_images">
+                    <img src="{{ url_for('static', filename='images/phone.png') }}" height="40" class="info_images">
                     <h4 class="up_text">Телефон</h4>
                     <h4 class="bottom_text">+380694201234</h4>
                 </div>
@@ -27,7 +27,7 @@
                 <br>
 
                 <div class="infobox">
-                    <img src="/images/mail.png" height="40" class="info_images">
+                    <img src="{{ url_for('static', filename='images/mail.png') }}" height="40" class="info_images">
                     <h4 class="up_text">Пошта</h4>
                     <h4 class="bottom_text" id="mail_text">mysuperposhta@gmail.com</h4>
                 </div>
@@ -35,7 +35,7 @@
                 <br>
 
                 <div class="infobox">
-                    <img src="/images/calander.png" height="40" class="info_images">
+                    <img src="{{ url_for('static', filename='images/calander.png') }}" height="40" class="info_images">
                     <h4 class="up_text">День народження</h4>
                     <h4 class="bottom_text" id="birthday_text">1 січня, 2000</h4>
                 </div>
@@ -43,7 +43,7 @@
                 <br>
 
                 <div class="infobox">
-                    <img src="/images/location.png" height="40" class="info_images">
+                    <img src="{{ url_for('static', filename='images/location.png') }}" height="40" class="info_images">
                     <h4 class="up_text">Локація</h4>
                     <h4 class="bottom_text" id="location_text">Україна</h4>
                 </div>
@@ -52,15 +52,15 @@
 
                 <div class="links">
                     <div>
-                        <a href="https://discord.com/users/723969960702902322" title="Discord"><img src="/images/discord.png" height="30"></a>
+                        <a href="https://discord.com/users/723969960702902322" title="Discord"><img src="{{ url_for('static', filename='images/discord.png') }}" height="30"></a>
                     </div>
 
                     <div>
-                        <a href="https://www.instagram.com/gyreua?igsh=dnNzMTR5a29kMGw4&utm_source=qr" title="Instagram"><img src="/images/instagram.png" height="30"></a>
+                        <a href="https://www.instagram.com/gyreua?igsh=dnNzMTR5a29kMGw4&utm_source=qr" title="Instagram"><img src="{{ url_for('static', filename='images/instagram.png') }}" height="30"></a>
                     </div>
 
                     <div>
-                        <a href="https://x.com/gyre__?s=11" title="Twitter"><img src="/images/twitter.png" height="30"></a>
+                        <a href="https://x.com/gyre__?s=11" title="Twitter"><img src="{{ url_for('static', filename='images/twitter.png') }}" height="30"></a>
                     </div>
                     
                 </div>

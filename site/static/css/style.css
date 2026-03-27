@@ -88,15 +88,10 @@ input {
     opacity: 0;
     animation: show .1s forwards 12s;
 }
-#st6, #wr6 {
+#inp_st, #inp_wr {
     top: 230px;
     opacity: 0;
     animation: show .1s forwards 15s;
-}
-#inp_st, #inp_wr {
-    top: 275px;
-    opacity: 1;
-    animation: show .1s forwards 18s;
 }
 
 

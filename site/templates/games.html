@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/style_proj.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style_proj.css') }}">
         <title>
             Портфоліо
         </title>
@@ -16,10 +16,10 @@
 
                 <nav class="navbar">
                     <ul>
-                        <li><a href="games.html" class="active">Ігри</a></li>
-                        <li><a href="programs.html">Програми</a></li>
-                        <li><a href="web_pages.html">Вебсторінки</a></li>
-                        <li><a href="my_projects.html">Всі</a></li>
+                        <li><a href="{{url_for('games')}}" class="active">Ігри</a></li>
+                        <li><a href="{{url_for('programs')}}">Програми</a></li>
+                        <li><a href="{{url_for('web_pages')}}">Вебсторінки</a></li>
+                        <li><a href="{{url_for('my_projects')}}">Всі</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,19 +35,19 @@
                 <div class="row">
 
                     <a href=""><div class="project">
-                        <img src="/images/projects/pirate/pirate_main.jpeg" height="170px" class="project_img">
+                        <img src="{{ url_for('static', filename='/images/projects/pirate/pirate_main.jpeg') }}" height="170px" class="project_img">
                         <h3 class="name">Island Adventure</h3>
                         <h3 class="type">Гра</h3>
                     </div></a>
 
                     <a href=""><div class="project">
-                        <img src="/images/projects/maze/maze1.jpeg" height="170px" class="project_img">
+                        <img src="{{ url_for('static', filename='/images/projects/maze/maze1.jpeg') }}" height="170px" class="project_img">
                         <h3 class="name">Maze</h3>
                         <h3 class="type">Гра</h3>
                     </div></a>
 
                     <a href=""><div class="project">
-                        <img src="/images/projects/doodle/doodle1.jpeg" height="170px" class="project_img">
+                        <img src="{{ url_for('static', filename='/images/projects/doodle/doodle1.jpeg') }}" height="170px" class="project_img">
                         <h3 class="name">Doodle Jump</h3>
                         <h3 class="type">Гра</h3>
                     </div></a>

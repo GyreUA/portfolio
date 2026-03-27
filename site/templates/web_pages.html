@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/style_proj.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style_proj.css') }}">
         <title>
             Портфоліо
         </title>
@@ -16,10 +16,10 @@
 
                 <nav class="navbar">
                     <ul>
-                        <li><a href="games.html">Ігри</a></li>
-                        <li><a href="programs.html">Програми</a></li>
-                        <li><a href="web_pages.html" class="active">Вебсторінки</a></li>
-                        <li><a href="my_projects.html">Всі</a></li>
+                        <li><a href="{{url_for('games')}}">Ігри</a></li>
+                        <li><a href="{{url_for('programs')}}">Програми</a></li>
+                        <li><a href="{{url_for('web_pages')}}" class="active">Вебсторінки</a></li>
+                        <li><a href="{{url_for('my_projects')}}">Всі</a></li>
                     </ul>
                 </nav>
             </div>

@@ -1,0 +1,112 @@
+.about_me{
+    position: relative;
+    color: white;
+    left:60px;
+    background-color: #2B2B2B;
+    border-radius: 15px;
+    width: 1000px;
+    height: 500px;
+}
+
+.about_info{
+    position: relative;
+    left: 20px;
+}
+
+body{
+    display: flex;
+    background-color: #262626;
+}
+
+h1{
+    color:white;
+}
+
+p{
+    font-size: large;
+}
+
+h2{
+    color:white
+}
+
+.sidebar-info{
+    position: relative;
+    width: 350px;
+    background-color: #2B2B2B;
+    border-radius: 15px;
+    left: 30px;
+    height: 800px;
+}
+
+.name{
+    position: relative;
+    left: 40px;
+}
+
+#hr_1 {
+    position: relative;
+    border-radius: 5px;
+    color: #C98600;
+}
+
+.info{
+    justify-content: space-between;
+    position: relative;
+    left: 30px;
+}
+
+.infobox{
+    width: 290px;
+    background-color: #262626;
+    border-radius: 15px;
+    border-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.info_images{
+    position: relative;
+    left: 20px;
+}
+
+.up_text{
+    position: relative;
+    left: 30px;
+    bottom: 12px;
+    color: #8C8C8C;
+}
+
+.bottom_text{
+    position: relative;
+    left: -30px;
+    bottom: -12px;
+    color: white;
+}
+
+.links{
+    position: relative;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    justify-content: center;
+    left: -30px;
+}
+
+#mail_text{
+    left: -18px;
+}
+
+#birthday_text{
+    left: -95px;
+}
+
+#location_text{
+    left: -27px;
+}
+
+#me{
+    position: relative;
+    left: 20px;
+}

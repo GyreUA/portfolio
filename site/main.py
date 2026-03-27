@@ -27,7 +27,7 @@ def go_to():
     if request.method == 'POST':
         if request.form['command'] == 'about_me':
             return redirect(url_for('about_me'))
-        if request.form['command'] == 'my_projects':
+        elif request.form['command'] == 'my_projects':
             return redirect(url_for('my_projects'))
 
     return render_template('terminal.html')
